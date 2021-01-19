@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <title>CityReach Check-in</title>
+
+        <!-- Load Main CSS -->
+        <link rel="stylesheet" href="main.css?v1.0">
+        <!-- Load Font Awesome -->
+        <link rel="stylesheet" href="fa/css/all.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        
+        <!-- Load jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Load Main JS -->
+        <script src="main.js?v=1.0"></script>
+    </head>
+    <body>
+        <div class="content">
+			<div class="header">
+				<img src="img/logo.png">
+			</div>
+            <div id="page-1" class="page show">
+                <div class="main">
+					<h2>Welcome!</h2>
+					<p>Welcome to CityReach Oakden!</p>            
+					<form action="https://cityreach.elvanto.com.au/form/ae60512c-a910-4c0b-a8c2-f38d745eb54c" method="post" name="elvanto-form" class="elvanto-form elvanto-form-0226" onsubmit="jQuery(this).find('[type=submit]').attr('disabled', 'disabled')">
+						<input type="hidden" name="save" value="1">
+						<div class="group">   
+							<input name="submissions[0][first_name]" id="first-name-input" type="text" required>
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>First Name*</label>
+						</div>
+						<div class="group">      
+							<input name="submissions[0][last_name]" id="last-name-input" type="text" required>
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Last Name*</label>
+						</div>
+						<input type="hidden" name="elvanto192021182119">
+						<input type="text" name="url" value="" class="hide">
+						<p class="small required">*Required</p>
+						<p class="small saved">Your details will be saved for your next check-in</p>
+						<button type="submit">Submit</button>
+					</form>
+					
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

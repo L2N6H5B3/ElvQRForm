@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <title>CityReach Check-in</title>
+
+        <!-- Load Main CSS -->
+        <link rel="stylesheet" href="main.css?v1.0">
+        <!-- Load Font Awesome -->
+        <link rel="stylesheet" href="fa/css/all.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        
+        <!-- Load jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Load Main JS -->
+        <script src="main.js?v=1.0"></script>
+    </head>
+    <body>
+        <div class="content">
+            <div id="success" class="page show">
+                <div class="success top">
+                    <div class="complete">
+                        <img class="complete" src="img/complete.png">
+                        <h1>Checked In</h1>
+                        <p id="code-location"></p>
+                        <h3>Name</h3>
+                        <p id="first-name"></p> <p id="last-name"></p>
+                    </div>
+                </div>
+                <div class="success bottom">
+                    <h3>You checked-in at</h3>
+                    <h3 id="last-checkin-date"></h3>
+                    <button onclick="ShowPage(1);">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
